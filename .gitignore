@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.db
+__pycache__/
+.venv/
+node_modules/
+frontend/dist/
+backend/dist/
+.DS_Store
+*.log
+*.pem
+*.pfx
+*.key
+storage/
