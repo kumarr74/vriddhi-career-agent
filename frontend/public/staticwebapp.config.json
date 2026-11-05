@@ -1,0 +1,31 @@
+{
+  "routes": [
+    {
+      "route": "/.auth/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/api/*",
+      "allowedRoles": [
+        "career_owner"
+      ]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "career_owner"
+      ]
+    }
+  ],
+  "responseOverrides": {
+    "401": {
+      "redirect": "/.auth/login/github?post_login_redirect_uri=/",
+      "statusCode": 302
+    }
+  },
+  "platform": {
+    "apiRuntime": "node:22"
+  }
+}

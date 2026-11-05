@@ -1,0 +1,14 @@
+{
+  "name": "vriddhi-career-agent-api",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Minimal Azure Static Web Apps managed API for job review",
+  "main": "src/functions/*.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "@azure/functions": "^4.7.0"
+  }
+}
